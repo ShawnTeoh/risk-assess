@@ -1,3 +1,7 @@
+body {
+    padding-top: 51px;
+}
+
 #sidebar-wrapper {
     z-index: 9000;
     position: fixed;
@@ -6,7 +10,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #49075E;
+    background: #49075e;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -65,10 +69,41 @@
 .sidebar-nav li.active a {
     text-decoration: none;
     color: #000;
-    background: #fff;
+    background: #e8e8e8;
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
+}
+
+.navbar-brand {
+    padding: 14.5px 15px 14.5px 60px;
+}
+
+.divider-vertical {
+    height: 40px;
+    border-left: 1px solid #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-btn.btn {
+    padding: 5px 18px;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+}
+
+#page-content-wrapper {
+    background-color: #e8e8e8;
+}
+
+#page-content {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-right: 0px;
 }

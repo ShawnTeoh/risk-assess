@@ -1,14 +1,11 @@
-$(window).resize(function () {
-    $('body').css('padding-top', parseInt($('#main-navbar').css("height")));
-});
-
-$(window).load(function () {
-    $('body').css('padding-top', parseInt($('#main-navbar').css("height")));
-});
-
 $("#toggle-nav").click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     $("#sidebar-wrapper, #page-content-wrapper").toggleClass("toggled");
-    $("#toggle-nav a span").toggleClass("glyphicon-triangle-left glyphicon-triangle-right");
+    $("#toggle-nav a span").toggleClass("glyphicon-chevron-left glyphicon-chevron-right");
+    if ($("#toggle-nav a span").hasClass("glyphicon-chevron-right")) {
+        $("#toggle-nav a").prop("title", "Expand Sidebar");
+    } else {
+        $("#toggle-nav a").prop("title", "Collapse Sidebar");
+    }
 });
